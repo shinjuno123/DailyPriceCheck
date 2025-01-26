@@ -1,0 +1,2 @@
+celery -A price_checker worker -l INFO
+celery -A price_checker beat -l INFO --scheduler django_celery_beat.schedulers:DatabaseScheduler

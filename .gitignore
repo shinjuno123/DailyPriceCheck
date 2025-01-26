@@ -1,0 +1,20 @@
+# VIRTUAL ENV
+env/
+env/*
+
+# VS CODE
+.vscode
+.vscode/*
+
+# python cache
+__pycache__
+__pycache__/*
+
+# Migration record
+migrations
+migrations/*
+
+# SQLite DB
+db.sqlite3
+
+
