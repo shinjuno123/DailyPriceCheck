@@ -3,8 +3,7 @@ name: Bug Report
 description: File a bug report.
 title: "Bug: "
 labels: ["bug"]
-assignees:
- - shinjuno123
+assignees: shinjuno123
 ---
 <!--- Provide a general summary of the issue in the Title above -->=
 
