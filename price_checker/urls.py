@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from crawler import views
+from django.views.generic import TemplateView
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/user/', include('user.urls')),
     path('schedule/', views.schedule_task, name='schedule'),
-    path('', views.index, name='schedule'),
-]
+    path('', TemplateView.as_view(template_name='index.html'))
+] 
